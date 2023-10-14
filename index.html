@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="device-width, initial-scale=1.0">
+	<title>RajaRata Morters</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+	<div class="header">
+		
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="img/logo.png" width="125px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="newcart.html">cart</a></li>
+				<li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+			</ul>
+		</nav>
+
+				
+				<div id="login-form" class="login-page">
+					<div class="form-box">
+						<div class="button-box">
+							<div id="btn"></div>
+							<button type="button"onclick='login()' class="toggle-btn">Log in</button>
+							<button type="button"onclick='register()' class="toggle-btn">Register</button>
+						</div>
+
+						<form id="login" class="input-group-login">
+						<input type="text" class="input-field" placeholder="Email Id" required>
+						<input type="password" class="input-field" placeholder="Enter password" required>
+						<input type="checkbox" class="check-box"><span>Remember Password</span>
+						<button type="submit" class="submit-btn">Log in</button>
+						</form>
+
+						<form id="register" class="input-group-register">
+
+						<form name="myform" action="connect.php" method="POST">
+
+						<input type="text" name="fname" class="input-field" placeholder="First Name" required>
+						<input type="text" name="lname" class="input-field" placeholder="Last Name" required>
+						<input type="text" name="emailid" class="input-field" placeholder="Email Id" required>
+						<input type="password" name="epassword" class="input-field" placeholder="Enter Password" required>
+						<input type="password" name="copassword" class="input-field" placeholder="Confirm Password" required>
+						<input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+						<button type="submit" class="submit-btn">Register</button>
+						</form>
+
+					</div>
+					</form>
+				</div>
+
+				<script>
+					var x=document.getElementById('login');
+					var y=document.getElementById('register');
+					var z=document.getElementById('btn');
+					function register()
+					{
+						x.style.left='-400px';
+						y.style.left='50px';
+						z.style.left='110px';
+
+					}
+					function login()
+					{
+						x.style.left='50px';
+						y.style.left='450px';
+						z.style.left='0px';
+					}
+
+				</script>
+				<script>
+					var modal = document.getElementById('login-form');
+					window.onclik = function(event)
+					{
+						if (event.target == modal)
+						{
+							modal.style.display = "none";
+						}
+					}
+				</script>
+
+
+<!---		<img src="img/cart.png" width="30px" height="30px">
+		<img src="img/menu.png" class="menu-icon" onclick="menutoggle()"> ---->
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<h1>RajaRata Motors.</h1>
+			<br>
+			<h2>All Bike Accessories<br>Are Here.!</h2>
+			<p>Welcome to bike accessories shop, where you can buy quality bike accessories<br>online today at the best price!</p>
+			<a href="" class="btn">Explore Now &#8594;</a>
+		</div>
+		<div class="col-2">
+			<img src="img/image01.png">
+		</div>
+	</div>
+	</div>
+	</div>
+
+<!------featured categories---------->
+
+	<div class="categories">
+		<div class="small-container">
+			<div class="row">
+			<div class="col-3">
+				<img src="img/cat2.jpg">
+			</div>
+			<div class="col-3">
+				<img src="img/cat1.jpg">
+			</div>
+			<div class="col-3">
+				<img src="img/cat3.jpg">
+			</div>
+		</div>
+		</div>
+		
+	</div>
+
+<!------Some Best products---------->
+	
+	<div class="small-container">
+		<h2 class="title">Some Best products</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="img/pro9.jpg">
+				<h4>Mudgurd</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>Rs:4650.00</p>
+			</div>
+
+			<div class="col-4">
+				<img src="img/pro10.jpg">
+				<h4> Oil seal kit</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>Rs:980.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/pro11.jpg">
+				<h4>Rod kit</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>Rs:7950.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/pro12.jpg">
+				<h4>Helmet</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>Rs:6550.00</p>
+			</div>
+		</div>
+
+ <!------Latest Movable products---------->
+
+		<h2 class="title">Latest Movable products</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="img/pro2.jpg">
+				<h4>Piston</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>Rs:6950.00</p>
+			</div>
+
+			<div class="col-4">
+				<img src="img/pro4.jpg">
+				<h4>E-oil</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>Rs:2400.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/pro5.jpg">
+				<h4>Chain s. kit</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>Rs:8950.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/pro8.jpg">
+				<h4>Ait filter</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>Rs:1050.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/pro1.jpg">
+				<h4>Nachi Bearing</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>Rs:1550.00</p>
+			</div>
+
+			<div class="col-4">
+				<img src="img/pro3.jpg">
+				<h4>Boor Kit</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>Rs:30980.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/pro6.jpg">
+				<h4>Headlight c.</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>Rs:4950.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/pro7.jpg">
+				<h4>cables</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>Rs:1050.00</p>
+			</div>
+		</div>
+	</div>
+
+	<!--------offer--------->
+
+<div class="offer">
+<div class="small-container">
+	<div class="row">
+		<div class="col-2">
+			<img src="img/offer1.png" class="offer-img">
+		</div>
+		<div class="col-2">
+			<p>Exclusivly Avilable on RajaRata Motors</p>
+			<h1>Gladiator Helmet</h1>
+			<small>The Gladiator Helmet is a Best Full Face Helmet and More Safty than the other helmets. Red, Black and Gray colors are Avilable.</small>
+			<br><a href="" class="btn">Buy Now &#8594;</a>
+		
+		</div>
+	</div>
+</div>
+</div>
+
+<!----------testimonial------->
+<div class="testimonial">
+	<div class="small-container">
+		<div class="row">
+			<div class="col-3">
+				<i class="fa fa-quote-left"></i>
+				<p>This is the best Helmet ever. and I can feel safty and comfortable with this helmet</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<img src="img/user1.jpg">
+				<h3>Farsan</h3>
+
+			</div>
+			<div class="col-3">
+				<i class="fa fa-quote-left"></i>
+				<p>Good and Best Helmet. 100% Best feel comfortable</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<img src="img/user2.jpg">
+				<h3>Hasitha</h3>
+
+			</div>
+			<div class="col-3">
+				<i class="fa fa-quote-left"></i>
+				<p>Quality Helmet and Good. I like this helmet and Shop Custermer handling also superb</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<img src="img/user3.jpg">
+				<h3>Kumara</h3>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--------brands-------->
+<div class="brand">
+	<div class="small-container">
+		<div class="row">
+			<div class="col-5">
+				<img src="img/logo1.png">
+			</div>
+			<div class="col-5">
+				<img src="img/logo2.png">
+			</div>
+			<div class="col-5">
+				<img src="img/logo4.png">
+			</div>
+			<div class="col-5">
+				<img src="img/logo3.png">
+			</div>
+			<div class="col-5">
+				<img src="img/logo5.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--------footer--------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Viste the Shop & Contect us Any time</h3>
+				<p>M.Farhan<br>0779674806</p>
+				<p>RajaRata Motors, kandy Road, Dambulla</p>
+			</div>
+			<div class="footer-col-2">
+				<img src="img/logo.png">
+			</div>
+			<div class="footer-col-3">
+				<h3>Follow us</h3>
+				<ul>
+				<li>Facebook</li>
+				<li>Twitter</li>
+			</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2022 - A.Mubarak Rasdhan</p>
+	</div>
+</div>
+
+<!-----js for toggle menu--------->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle() {
+		if (MenuItems.style.maxHeight == "0px")
+			{
+				MenuItems.style.maxHeight = "200px";
+			}
+		else
+		{
+				MenuItems.style.maxHeight = "0px";
+		}
+	}
+
+</script>
+
+</body>
+</html>
